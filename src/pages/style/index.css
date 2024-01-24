@@ -1,0 +1,390 @@
+body{
+    background-image: url(/src/img/new.jpg) ;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul li {
+    color: aliceblue;
+   margin: 10px;
+    position: relative;
+    right: 100px;
+    
+}
+.kantent{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+.taqsimla{
+   margin-left: 80px;
+}
+.servis{
+    margin-top: 32px;
+    margin-right: 10px;
+}
+.knopka:hover{
+    background-color: greenyellow;
+}
+ul li a {
+    text-decoration: none;
+    border: none;
+    padding: 5px;
+    background-color: rgb(162, 79, 239);
+    border-radius: 6px;
+
+    
+}
+
+ul li a:hover{
+    background-color: rgb(91, 155, 28);
+}
+
+
+ul li a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+label #btn,
+label #x {
+    position: absolute;
+    top: 50%; 
+    font-size: 25px;
+    cursor: pointer;
+    transform: translate(0, -50%);
+   display: none;
+  right: 5px;
+}
+
+#check {
+    display: none;
+}
+.asosiy{
+    display: flex;
+}
+.xizmatlar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 24px;
+    margin: 10px;
+    cursor: inherit;
+   
+}
+
+#h1 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#id {
+    color: #fff;
+    background-color: rgba(76, 0, 130, 0.301);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+#id:hover {
+    background-color: indigo;
+}
+.asosiyrasim{
+    z-index: -1;
+    position: fixed;
+    top: 10px;
+   height: 100%;
+    width: 100%;
+    -webkit-filter: blur(5px); 
+    filter: blur(5px)
+}
+
+.nima{
+    position: relative;
+    background-color: indigo;
+    width: 450px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 12px;
+    left: 240px;
+    bottom: 60px;
+}
+
+.nima h1 {
+    position: relative;
+    right: 30px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.nima a {
+    position: relative;
+    left: 330px;
+    padding: 5px;
+    padding-inline: 15px;
+    background-color: gold;
+    border-radius: 6px;
+    bottom: 5px;
+}
+.rasim{
+    border-radius: 12px;
+}
+
+/*////////////////////////// servislar///////////////////////////////////////// */
+.servis {
+    position: relative;
+    left: -25px;
+}
+.nima1{
+    position: relative;
+    background-color: indigo;
+    width: 300px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 12px;
+    left: 160px;
+    bottom: 35px;
+}
+
+.nima1 h1 {
+    position: relative;
+    right: 30px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.nima1 a {
+    position: relative;
+    left: 180px;
+    padding: 5px;
+    padding-inline: 8px;
+    background-color: gold;
+    border-radius: 6px;
+    bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////////////////responsiv///////////////////////////////////////////////////////////////////////////// */
+
+@media (width:375){
+   .yoqot{
+    display: none;
+   }
+}
+
+@media (max-width: 1023px) {
+     .kantent {
+     display: block;
+       position: relative;
+     margin-right: 20%;
+       z-index: -1; 
+    
+    }
+    .ml-10 {
+        margin-top: 10px;
+    }
+
+
+label #btn {
+    display: inline-block;
+    color: aliceblue;
+}
+
+    ul {
+    position: fixed;
+    top: 0px;
+    right: -100%;
+    width: 50%;
+    height: 200vh;
+    background-color: rgb(211, 205, 27);
+    padding-top: 80px;
+    display: block;
+    line-height: 30px;
+    z-index: 100;
+    transition: 0.5s;
+    }
+
+    ul li {
+        margin-left: 115px;
+    }
+
+    ul li a {
+        font-size: 15px;
+        
+    }
+    #check:checked ~ul {
+        right: 0;
+    }
+    #check:checked ~ label #btn {
+        display: none;
+    }
+    #check:checked ~ label #x {
+      display: block;
+      z-index: 101;
+      color: aliceblue;
+
+    }
+    .orqa{
+        position: fixed;
+        width: 100%;
+        top:0;
+        height: 100%;
+       
+    }
+    .asosiy {
+        display: block;
+        position: relative;
+        right: 100px;
+           
+}
+     .rasim
+    {
+       max-height: 250px;
+      position: relative;
+      top: -20px;
+      left: 40px;
+       justify-content: center;
+    }
+   .nima{
+    max-width: 400px;
+    position: relative;
+   left: 100px;
+   bottom: 100px;
+   }
+   .button.button{
+    position: relative;
+    left: 45px;
+          
+}
+.bazimlar{
+    margin-left: 100px;
+    margin-bottom: 0px ;
+}
+.servis{
+    position: relative;
+    top: 50px;
+}
+.nima1 {
+    left: -40px;
+}
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media (min-width: 1024px){
+    ul  {
+        position: relative;
+        left: 95px;
+        font-size: 12px;
+
+    }
+
+    .rad{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        left: -60px;
+    }
+    .yoqot {
+        display: none;
+    }
+    .asosiy{
+        display: block;
+        left: 100px;
+    }
+    .bazimlar {
+       margin-left: 100px;
+    }
+}
+.servis{
+    top: -30px;
+    margin-left: 120px;
+    margin-bottom: 0;
+
+}
+.rasim1{
+    max-height: 340px;
+}
+.nima1{
+    width: 400px;
+    height: 150px;
+   margin-left: 150px;
+}
+.asosiy{
+    display: block;
+    
+}
+.orqa{
+position: fixed;
+width: 100%;
+top:0;
+height: 100%;
+z-index: -1;
+
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media (min-width: 1280px){
+ul li {
+    font-size: 17px;
+}
+h3 {
+    position: relative;
+    left: 5px;
+    font-size: 40px;
+}
+.kantent , .yoqot{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.yoqot{
+    position: relative;
+    left: -60px;
+}
+.asosiy{
+    display: flex;
+    position: relative;
+    left: -80px;
+}
+
+    /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+}
+@media (min-width: 1536px) {
+    ul {
+        font-size: 20px;
+    }
+    section {
+        position: relative;
+    
+    }
+    h3 {
+        font-size: 30px;
+    }
+    .asosiy{
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+

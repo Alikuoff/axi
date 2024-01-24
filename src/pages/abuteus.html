@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Party-Organizer</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style/index.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container flex flex-col items-center justify-center mt-32" x-cloak x-data="appData()" x-init="appInit()">
+		<div class="flex flex-col">
+			<!-- Navbar -->
+			<nav class="flex justify-around py-4 bg-amber-400
+				backdrop-blur-md shadow-md w-full
+				fixed top-0 left-0 right-0 z-10">
+				<!-- Logo Container -->
+				<div class="flex items-center">
+					<!-- Logo -->
+					<a href="asosiyoyna.html" class="cursor-pointer" id="logo">
+						<h3 class=" nomi text-2xl font-medium text-white flex font-serif relative -left-10" >Party-Time
+							<img class="h-10 object-cover"
+								src="/src/img/galards-party-svgrepo-com.svg" alt="party logo">
+						</h3>
+					</a>
+				</div>
+				<!-- Links Section -->
+				<div >
+					<input type="checkbox" name="check " id="check">
+					<label for="check">
+						<i class='bx bx-menu' id="btn"></i>
+						<i class='bx bx-x' id="x"></i>
+					</label>
+					<ul >
+						<li> <a href="Bazimlar.html">BAZIMLAR</a></li>
+						<li> <a href="abuteus.html">ABOUTE US</a></li>
+						<li><a href="/src/login.html">SIGN UP</a></li>
+                        <li><a href="/src/login.html">LOGIN IN</a></li>
+					</ul>
+				</div>
+	
+			   
+			</nav>
+		</div>
+	</div>
+	<div id="ABOUTE" class="flex flex-wrap
+	">
+		<div class="border rounded-md  mx-auto px-5 bg-white min-h-sceen">
+			<div class="flex flex-col items-center">
+				<h2 class="font-bold text-5xl mt-5 tracking-tight">
+				Biz Haqimizdagi barcha savollarga javoblar
+				</h2>
+				<p class="text-neutral-500 text-xl mt-3">
+						Foydalanuvchilardan kelgan savollar uchun Party-Organizer javoblar
+				</p>
+			</div>
+			<div class="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
+				<div class="py-5">
+					<details class="group">
+						<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+							<span> Nima ish qilamiz?</span>
+							<span class="transition group-open:rotate-180">
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+		</svg>
+					  </span>
+						</summary>
+						<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+							 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat magnam cum labore illum numquam eum fuga harum laboriosam enim ad provident molestiae excepturi sunt sint aliquid alias, eveniet velit quam?
+							 Itaque esse optio atque sint id vel eveniet incidunt sit quo culpa magni natus ad doloremque recusandae voluptatum architecto totam adipisci, autem deleniti, libero molestias ea omnis consectetur? Minus, ex!
+						</p>
+					</details>
+				</div>
+				<div class="py-5">
+					<details class="group">
+						<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+							<span> Saytning vazifasi nima?</span>
+							<span class="transition group-open:rotate-180">
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+		</svg>
+					  </span>
+						</summary>
+						<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa nisi non nemo explicabo ut blanditiis at ab inventore veniam! Quo rem nobis ut. Consequatur soluta, placeat magni obcaecati unde totam?
+							Velit explicabo id aliquam dignissimos soluta ex. Nulla necessitatibus suscipit, ratione rerum sed nihil quod, voluptas beatae deserunt eaque molestias eos sequi consequuntur quasi perspiciatis praesentium autem minus voluptatem reprehenderit.
+						</p>
+					</details>
+				</div>
+				<div class="py-5">
+					<details class="group">
+						<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+							<span> Maqsadimiz nima?</span>
+							<span class="transition group-open:rotate-180">
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+		</svg>
+					  </span>
+						</summary>
+						<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi deserunt quaerat asperiores nemo nostrum fuga iure, obcaecati eveniet error officia, consectetur aliquid dignissimos explicabo at aliquam illum rerum eligendi maxime?
+							Rerum alias quisquam tenetur ullam rem est recusandae repellat! Fugiat, corporis? Iste, ipsam dolorum expedita provident cumque, laborum voluptatibus ullam explicabo sapiente ducimus, blanditiis natus unde. Labore, alias? Quam, commodi?
+						</p>
+					</details>
+				</div>
+				<div class="py-5">
+					<details class="group">
+						<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+							<span>Saytda qanday ro'yxatdan o'tish kerak?</span>
+							<span class="transition group-open:rotate-180">
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+		</svg>
+					  </span>
+						</summary>
+						<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos repudiandae ex commodi, necessitatibus accusantium ipsum, velit fugiat expedita optio earum consequuntur doloremque minima quibusdam quasi exercitationem. Consectetur inventore eveniet maiores?
+							Iusto ullam porro, vero debitis quis officiis nostrum! Non consequuntur cupiditate rem magni, illum minus impedit assumenda ipsa laboriosam dignissimos magnam totam quos quo fuga accusantium. Voluptates omnis quaerat totam?
+							At saepe quibusdam magni, natus necessitatibus asperiores aspernatur! Ullam quisquam consectetur dolore id saepe ducimus porro itaque, ratione recusandae eligendi, nisi facilis tenetur in sunt quas quasi magnam molestias ipsam.
+						</p>
+					</details>
+				</div>
+				<div class="py-5">
+					<details class="group">
+						<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+							<span> Bazimlarga qanday buyurtma beriladi?</span>
+							<span class="transition group-open:rotate-180">
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+		</svg>
+					  </span>
+						</summary>
+						<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ratione sapiente laboriosam delectus dolore numquam, porro esse sequi voluptates? Quibusdam reiciendis amet suscipit a molestias facere. Totam non distinctio cumque.
+							Ex tenetur deserunt nostrum optio, autem, itaque sed illum exercitationem voluptatibus cumque mollitia repellat et rerum alias corporis consequuntur. Consectetur ea laborum qui voluptate minima sint neque, quae itaque necessitatibus?
+						</p>
+					</details>
+				</div>
+				<div class="py-5">
+					<details class="group">
+						<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+							<span> Qancha vaqtdan beri ish yurutamiz?</span>
+							<span class="transition group-open:rotate-180">
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+		</svg>
+					  </span>
+						</summary>
+						<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+							  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat accusamus minima ad atque. Quia obcaecati voluptate est, incidunt quod repellendus! Repudiandae ad soluta debitis a natus tempora, commodi necessitatibus placeat!
+							  Quam maxime sunt velit est error quae, dolorum tempore labore ipsam delectus debitis dolorem aut eaque odio explicabo enim possimus, quaerat inventore assumenda commodi aliquid necessitatibus pariatur, consequuntur voluptatibus. Voluptates!
+						</p>
+					</details>
+				</div>
+				<div class="py-5">
+					<details class="group">
+						<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+							<span> Biz bilan qanday bog'lansa bo'ladi?</span>
+							<span class="transition group-open:rotate-180">
+						<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
+		</svg>
+					  </span>
+						</summary>
+						<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt aliquid tenetur repudiandae odit! Dolore deserunt magnam, doloribus porro accusamus et voluptatum earum reprehenderit maiores? Eaque voluptates eveniet perferendis blanditiis excepturi?
+							Ad voluptate ab pariatur ex dicta ut labore laudantium beatae sint ullam adipisci quibusdam mollitia, consequatur non quia, repudiandae sed voluptates molestiae impedit voluptatem optio tempore dolores. Voluptatum, necessitatibus sint.
+						</p>
+					</details>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

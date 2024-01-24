@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Party-Organizer</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style/index.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://horizon-tailwind-react-corporate-7s21b54hb-horizon-ui.vercel.app/static/css/main.d7f96858.css" />
+</head>
+<body>
+    <div class="container flex flex-col items-center justify-center mt-32" x-cloak x-data="appData()" x-init="appInit()">
+        <div class="flex flex-col">
+            <!-- Navbar -->
+            <nav class="flex justify-around py-4 bg-amber-400
+                backdrop-blur-md shadow-md w-full
+                fixed top-0 left-0 right-0 z-10">
+                <!-- Logo Container -->
+                <div class="flex items-center">
+                    <!-- Logo -->
+                    <a href="asosiyoyna.html" class="cursor-pointer" id="logo">
+                        <h3 class=" nomi text-2xl font-medium text-white flex font-serif relative -left-10" >Party-Time
+                            <img class="h-10 object-cover"
+                                src="/src/img/galards-party-svgrepo-com.svg" alt="party logo">
+                        </h3>
+                    </a>
+                </div>
+                <!-- Links Section -->
+                <div >
+                    <input type="checkbox" name="check " id="check">
+                    <label for="check">
+                        <i class='bx bx-menu' id="btn"></i>
+                        <i class='bx bx-x' id="x"></i>
+                    </label>
+                    <ul >
+                        <li> <a href="Bazimlar.html">BAZIMLAR</a></li>
+                        <li> <a href="abuteus.html">ABOUTE US</a></li>
+                        <li><a href="/src/login.html">SIGN UP</a></li>
+                        <li><a href="/src/login.html">LOGIN IN</a></li>
+                    </ul>
+                </div>
+    
+               
+            </nav>
+        </div>
+    </div>
+       <!--------------------------------------------------------XIZMATLAR TURLARI -----------------------------------------------------------------------  -->
+        <div class="boshqa_xizmatlar ">
+            <h1 id="h1" class="text-white">BOSHQA-XIZMATLAR</h1>
+            <div class="container1">
+                <div class="div">
+                    <li class="xizmatlar"><a href=""><i class='bx bxs-bowl-hot' id="id"></i><strong>FOOD-FAST:  </strong></a><sban class="tooltip">Bazimlarga Taom eltib berish</sban> </li>
+                    <li class="xizmatlar"><a href=""><i class='bx bxs-balloon' id="id"></i><strong class="qalin">PLACE-PRETTIER: </strong></a><sban class="tooltip">Bazimlar uchun joy bezatish</sban></li>
+                    <li class="xizmatlar"><a href=""><i class='bx bxs-donate-heart' id="id"></i><strong  class="qalin">Donation: </strong></a><sban class="tooltip"> Xayriya jamg'armalari</sban></li>
+                    <li class="xizmatlar"><a href=""><i class='bx bxs-envelope' id="id"></i><strong  class="qalin">Invitation: </strong></a><sban class="tooltip"> Bazimlar uchun taklifnomalar tuzish</sban></li>
+                    <li class="xizmatlar"><a href=""><i class='bx bxs-category' id="id"></i><strong  class="qalin">Gatgets-Party: </strong></a><sban class="tooltip">Yoritish va musiqa uskunalari</sban></li>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

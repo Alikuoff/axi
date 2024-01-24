@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+    <div class="container flex flex-col items-center justify-center mt-32" x-cloak x-data="appData()" x-init="appInit()">
+        <div class="flex flex-col">
+            <!-- Navbar -->
+            <nav class="flex justify-around py-4 bg-amber-400
+                backdrop-blur-md shadow-md w-full
+                fixed top-0 left-0 right-0 z-10">
+                <!-- Logo Container -->
+                <div class="flex items-center">
+                    <!-- Logo -->
+                    <a href="asosiyoyna.html" class="cursor-pointer" id="logo">
+                        <h3 class=" nomi text-2xl font-medium text-white flex font-serif relative -left-10" >Party-Time
+                            <img class="h-10 object-cover"
+                                src="/src/img/galards-party-svgrepo-com.svg" alt="party logo">
+                        </h3>
+                    </a>
+                </div>
+                <!-- Links Section -->
+                <div >
+                    <input type="checkbox" name="check " id="check">
+                    <label for="check">
+                        <i class='bx bx-menu' id="btn"></i>
+                        <i class='bx bx-x' id="x"></i>
+                    </label>
+                    <ul >
+                        <li> <a href="Bazimlar.html">BAZIMLAR</a></li>
+                        <li> <a href="abuteus.html">ABOUTE US</a></li>
+                        <li><a href="/src/login.html">SIGN UP</a></li>
+                        <li><a href="/src/login.html">LOGIN IN</a></li>
+                    </ul>
+                </div>
+    
+               
+            </nav>
+        </div>
+    </div>
+
+
+<section class="bg-center bg-no-repeat">
+    <img class="absolute  asosiyrasim" src="/src/img/new.jpg" alt="">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Bazimlaringizni sizning o'rningizga biz tashkillashtramiz</h1>
+        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Bazmilar, Tadbirlar, Sayhoyatlar tashkillashtrish va boshqa turli xizmatlar . Saytdan Foydalanish yoki o'rganish uchun bosing.</p>
+        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+            <a href="Bazimlar.html" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                Boshlash
+                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>
+            <a href="abuteus.html" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+                Sayt Haqida Batafsil Ma'lumot
+            </a>  
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
